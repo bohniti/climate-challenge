@@ -7,14 +7,21 @@
 ## Abstract
 
 
+The problem your project solves
+Due to the various CoVid-19 measures implemented worldwide, global emissions from surface transport fell by –36% or –7.5 (–5.9 to –9.6) MtCO​ d​by 7 April 2020 in comparison to the
+2​
+previous year (1). CoVid-19 has thus been named as the digitization driver for home office,
+which is a significant part of surface transport (ca. 20%). We want to make sure that companies will not return to business as usual and continue to enable their employees to work remotely.
+The reduction of personal CO2 emissions alone has shown to be not sufficient for the general public to adopt measures. Thus, we are convinced that solely personal benefits, in our case saving money and time by staying at home, would have the potential to be used by a wider audience. Based on a survey by ​Greenpeace (2020)​we estimate the potential of home office in Germany to 4.8 mil tonnes per year which is around 3% of Germany's surface transport emissions.
+
 ## Content
 
 - Python Notebook as [iPython](https://github.com/Mavengence/Climate_Challenge_Hackathon/Notebooks/get_data_eval_days.ipynb)
-- Report/Paper as [PDF](https://github.com/Mavengence/Climate_Challenge_Hackathon/Final_Report.pdf)
-- Presentation as [PDF](https://github.com/Mavengence/Climate_Challenge_Hackathon/Final_Presentation.pdf)
+- Report/Paper as [PDF](https://github.com/Mavengence/Climate_Challenge_Hackathon/blob/master/Final_Report.pdf)
+- Presentation as [PDF](https://github.com/Mavengence/Climate_Challenge_Hackathon/blob/master/Final_Presentation.pdf)
 
 
-### Structure
+## Structure
 
 ```
 
@@ -43,7 +50,7 @@
 
 ```
 
-### Prerequisites
+## Prerequisites
 
 Create the conda environment:
 
@@ -58,7 +65,7 @@ if you dont create and environment, install this:
     pip install streamlit
 ```
 
-## Follow these steps:
+### Follow these steps:
 
 ##### Credentials.json
 
@@ -119,13 +126,21 @@ git clone https://github.com/Mavengence/Climate_Challenge_Hackathon
 <img src="Images/prototype.gif" width="1200" />
 </center>
 
-### Run the Notebook
+
+## Workflow
+
+When you click the button *Create Scheduler for next week*, an entry in the *Data/scheduler_df.csv* will be created for the upcoming week.
+For that reason you cannot create multiple events for the upcoming week. If you wanna re-do the event adding, just go into the *scheduler_df.csv* 
+and set the True to False.
+
+
+## Run the Notebook
 
 ```
     cd/you_cloned_repo_location/Notebooks jupyter notebook
 ```
 
-### Deployment
+## Deployment
 
 Just pull the repo, if you wanna change sth you can ask :)
 
